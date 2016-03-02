@@ -22,7 +22,7 @@
         android:layout_marginBottom="261dp"
         android:src="@drawable/logolowres"/>
 
-    //below is the sign in button
+    //below is the sign in button 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
