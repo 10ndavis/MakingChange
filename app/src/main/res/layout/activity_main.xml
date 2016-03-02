@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.makingchange.MainActivity">
 
-
+    //below is the icon
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -21,6 +21,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="261dp"
         android:src="@drawable/logolowres"/>
+
+    //below is the sign in button
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -34,6 +36,7 @@
         android:background="#C62828"
         android:textColor="@android:color/white"/>
 
+    //below is the sign up button
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
