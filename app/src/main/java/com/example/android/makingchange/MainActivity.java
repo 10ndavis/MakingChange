@@ -1,16 +1,13 @@
 package com.example.android.makingchange;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +16,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
+    }
+
+    public void MenuMove(View v) {
 
         //MAIN MENU BUTTONS
         final Button MainMenu_BtnSignIn = (Button) findViewById(R.id.mainmenu_button_signin);
@@ -41,28 +42,60 @@ public class MainActivity extends AppCompatActivity {
         final TextView SignUp_EmailView = (TextView) findViewById(R.id.signup_txtemail);
         final EditText SignUp_EmailField = (EditText) findViewById(R.id.signup_email);
 
-        //OnClick Listener for Sign In Button
-        MainMenu_BtnSignIn.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                MainMenu_BtnSignIn.setVisibility(View.GONE);
-                MainMenu_BtnSignUp.setVisibility(View.GONE);
-                MainMenu_BtnBack.setVisibility(View.VISIBLE);
-                MainMenu_BtnOK.setVisibility(View.VISIBLE);
-                //LogoImage.setVisibility(View.GONE);
+        switch (v.getId()) {
+            case R.id.mainmenu_button_back:
+                MainMenu_BtnSignIn.setVisibility(View.VISIBLE);
+                MainMenu_BtnSignUp.setVisibility(View.VISIBLE);
+                MainMenu_LogoImage.setVisibility(View.VISIBLE);
+                SignIn_UserNameField.setVisibility(View.GONE);
+                SignIn_UserNameView.setVisibility(View.GONE);
+                SignIn_PasswordField.setVisibility(View.GONE);
+                SignIn_PasswordView.setVisibility(View.GONE);
+                SignUp_UserNameField.setVisibility(View.GONE);
+                SignUp_UserNameView.setVisibility(View.GONE);
+                SignUp_PasswordField.setVisibility(View.GONE);
+                SignUp_PasswordView.setVisibility(View.GONE);
+                SignUp_PasswordField2.setVisibility(View.GONE);
+                SignUp_PasswordView2.setVisibility(View.GONE);
+                SignUp_EmailField.setVisibility(View.GONE);
+                SignUp_EmailView.setVisibility(View.GONE);
+                MainMenu_BtnBack.setVisibility(View.GONE);
+                MainMenu_BtnOK.setVisibility(View.GONE);
+                break;
+
+            case R.id.mainmenu_button_ok:
+                MainMenu_BtnSignIn.setVisibility(View.VISIBLE);
+                MainMenu_BtnSignUp.setVisibility(View.VISIBLE);
+                MainMenu_LogoImage.setVisibility(View.VISIBLE);
+                SignIn_UserNameField.setVisibility(View.GONE);
+                SignIn_UserNameView.setVisibility(View.GONE);
+                SignIn_PasswordField.setVisibility(View.GONE);
+                SignIn_PasswordView.setVisibility(View.GONE);
+                SignUp_UserNameField.setVisibility(View.GONE);
+                SignUp_UserNameView.setVisibility(View.GONE);
+                SignUp_PasswordField.setVisibility(View.GONE);
+                SignUp_PasswordView.setVisibility(View.GONE);
+                SignUp_PasswordField2.setVisibility(View.GONE);
+                SignUp_PasswordView2.setVisibility(View.GONE);
+                SignUp_EmailField.setVisibility(View.GONE);
+                SignUp_EmailView.setVisibility(View.GONE);
+                MainMenu_BtnBack.setVisibility(View.GONE);
+                MainMenu_BtnOK.setVisibility(View.GONE);
+                break;
+
+            case R.id.mainmenu_button_signin:
                 SignIn_UserNameField.setVisibility(View.VISIBLE);
                 SignIn_UserNameView.setVisibility(View.VISIBLE);
                 SignIn_PasswordField.setVisibility(View.VISIBLE);
                 SignIn_PasswordView.setVisibility(View.VISIBLE);
-
-
-            }
-        });
-        //OnClick Listener for Sign Up Button
-
-        MainMenu_BtnSignUp.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
                 MainMenu_BtnSignIn.setVisibility(View.GONE);
                 MainMenu_BtnSignUp.setVisibility(View.GONE);
+                MainMenu_BtnBack.setVisibility(View.VISIBLE);
+                MainMenu_BtnOK.setVisibility(View.VISIBLE);
+                MainMenu_LogoImage.setVisibility(View.VISIBLE);
+                break;
+
+            case R.id.mainmenu_button_signup:
                 MainMenu_BtnBack.setVisibility(View.VISIBLE);
                 MainMenu_BtnOK.setVisibility(View.VISIBLE);
                 MainMenu_LogoImage.setVisibility(View.GONE);
@@ -74,58 +107,11 @@ public class MainActivity extends AppCompatActivity {
                 SignUp_PasswordView2.setVisibility(View.VISIBLE);
                 SignUp_EmailField.setVisibility(View.VISIBLE);
                 SignUp_EmailView.setVisibility(View.VISIBLE);
-            }
-        });
-        //OnClick Listener for Back Button
-
-        MainMenu_BtnBack.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                MainMenu_BtnSignIn.setVisibility(View.VISIBLE);
-                MainMenu_BtnSignUp.setVisibility(View.VISIBLE);
-                MainMenu_BtnBack.setVisibility(View.GONE);
-                MainMenu_BtnOK.setVisibility(View.GONE);
-                MainMenu_LogoImage.setVisibility(View.VISIBLE);
-                SignIn_UserNameField.setVisibility(View.GONE);
-                SignIn_UserNameView.setVisibility(View.GONE);
-                SignIn_PasswordField.setVisibility(View.GONE);
-                SignIn_PasswordView.setVisibility(View.GONE);
-                SignUp_UserNameField.setVisibility(View.GONE);
-                SignUp_UserNameView.setVisibility(View.GONE);
-                SignUp_PasswordField.setVisibility(View.GONE);
-                SignUp_PasswordView.setVisibility(View.GONE);
-                SignUp_PasswordField2.setVisibility(View.GONE);
-                SignUp_PasswordView2.setVisibility(View.GONE);
-                SignUp_EmailField.setVisibility(View.GONE);
-                SignUp_EmailView.setVisibility(View.GONE);
-            }
-        });
-        //OnClick Listener for Confirm Button
-
-        MainMenu_BtnOK.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                MainMenu_BtnSignIn.setVisibility(View.VISIBLE);
-                MainMenu_BtnSignUp.setVisibility(View.VISIBLE);
-                MainMenu_BtnBack.setVisibility(View.GONE);
-                MainMenu_BtnOK.setVisibility(View.GONE);
-                MainMenu_LogoImage.setVisibility(View.VISIBLE);
-                SignIn_UserNameField.setVisibility(View.GONE);
-                SignIn_UserNameView.setVisibility(View.GONE);
-                SignIn_PasswordField.setVisibility(View.GONE);
-                SignIn_PasswordView.setVisibility(View.GONE);
-                SignUp_UserNameField.setVisibility(View.GONE);
-                SignUp_UserNameView.setVisibility(View.GONE);
-                SignUp_PasswordField.setVisibility(View.GONE);
-                SignUp_PasswordView.setVisibility(View.GONE);
-                SignUp_PasswordField2.setVisibility(View.GONE);
-                SignUp_PasswordView2.setVisibility(View.GONE);
-                SignUp_EmailField.setVisibility(View.GONE);
-                SignUp_EmailView.setVisibility(View.GONE);
-            }
-        });
-
+                break;
+        }
 
 
     }
 
 
-};
+}
