@@ -1,16 +1,13 @@
 package com.example.android.makingchange;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -84,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
                 SignUp_EmailView.setVisibility(View.GONE);
                 MainMenu_BtnBack.setVisibility(View.GONE);
                 MainMenu_BtnOK.setVisibility(View.GONE);
-                MainMenu_LogoImage.setVisibility(View.VISIBLE);
                 break;
 
             case R.id.mainmenu_button_signin:
