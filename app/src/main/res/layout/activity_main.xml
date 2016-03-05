@@ -24,6 +24,17 @@
         android:src="@drawable/logolowres" />
 
 
+    <TextView
+        android:id="@+id/mainmenu_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:enabled="false"
+        android:text="Making Change"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="40dp" />
+
+
     <Button
         android:id="@+id/mainmenu_button_signin"
         android:layout_width="160dp"
@@ -53,143 +64,9 @@
         android:text="Sign Up"
         android:textColor="@android:color/white" />
 
-    <Button
-        android:id="@+id/mainmenu_button_back"
-        android:layout_width="160dp"
-        android:layout_height="36dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="30dp"
-        android:background="@color/colorPrimary"
-        android:onClick="MenuMove"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:text="Back"
-        android:textColor="@android:color/white"
-        android:visibility="gone" />
 
-    <Button
-        android:id="@+id/mainmenu_button_ok"
-        android:layout_width="160dp"
-        android:layout_height="36dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="30dp"
-        android:background="@color/colorPrimary"
-        android:onClick="MenuMove"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:text="OK"
-        android:textColor="@android:color/white"
-        android:visibility="gone" />
 
-    <TextView
-        android:id="@+id/signin_txtusername"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
-        android:text="UserName"
-        android:textColor="@color/colorPrimaryLight"
-        android:visibility="gone" />
 
-    <EditText
-        android:id="@+id/signin_username"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signin_txtusername"
-        android:inputType="text"
-        android:textColor="@color/colorPrimaryLight"
-        android:visibility="gone" />
-
-    <TextView
-        android:id="@+id/signin_txtpassword"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signin_username"
-        android:text="Password"
-        android:textColor="@color/colorPrimaryLight"
-        android:visibility="gone" />
-
-    <EditText
-        android:id="@+id/signin_password"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signin_txtpassword"
-        android:inputType="textPassword"
-        android:textColor="@color/colorPrimaryLight"
-        android:visibility="gone" />
-
-    <TextView
-        android:id="@+id/signup_txtusername"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/signin_password"
-        android:layout_marginTop="20dp"
-        android:text="UserName"
-        android:textColor="@color/colorPrimaryLight"
-        android:visibility="gone" />
-
-    <EditText
-        android:id="@+id/signup_username"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signup_txtusername"
-        android:inputType="text"
-        android:textColor="@color/colorPrimaryLight"
-        android:visibility="gone" />
-
-    <TextView
-        android:id="@+id/signup_txtpassword"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signup_username"
-        android:text="Password"
-        android:textColor="@color/colorPrimaryLight"
-        android:visibility="gone" />
-
-    <EditText
-        android:id="@+id/signup_password"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signup_txtpassword"
-        android:inputType="textPassword"
-        android:textColor="@color/colorPrimaryLight"
-        android:visibility="gone" />
-
-    <TextView
-        android:id="@+id/signup_txtpassword2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signup_password"
-        android:text="Password Confirm"
-        android:textColor="@color/colorPrimaryLight"
-        android:visibility="gone" />
-
-    <EditText
-        android:id="@+id/signup_password2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signup_txtpassword2"
-        android:inputType="textPassword"
-        android:textColor="@color/colorPrimaryLight"
-        android:visibility="gone" />
-
-    <TextView
-        android:id="@+id/signup_txtemail"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signup_password2"
-        android:text="Email"
-        android:textColor="@color/colorPrimaryLight"
-        android:visibility="gone" />
-
-    <EditText
-        android:id="@+id/signup_email"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/signup_txtemail"
-        android:textColor="@color/colorPrimaryLight"
-        android:visibility="gone" />
 
 </RelativeLayout>
 
