@@ -3,11 +3,11 @@ package com.example.android.makingchange;
 import java.sql.Connection;
 import java.sql.Statement;
 
-public class SignIn {
+public class SignUp {
 
     static final String DB_URL = "jdbc:mysql://104.197.99.130:1433/makingchagedb";
 
-    public static void signin(String LoginUser, String LoginPass) {
+    public static void signup(String LoginUser, String LoginPass) {
 
         Connection conn = null;
         Statement stmt = null;
@@ -80,3 +80,5 @@ public class SignIn {
     }//end main*/
     }
 }//end FirstExample
+
+

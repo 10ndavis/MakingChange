@@ -10,11 +10,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Hides titlebar
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //Sets content view to activity main
         setContentView(R.layout.activity_main);
+
     }
 
     public void MenuMove(View v) throws Exception {
+        //Switch statement to check name of button
         switch (v.getId()) {
 
             case R.id.mainmenu_button_back:
@@ -22,8 +26,13 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.mainmenu_button_ok:
+/*                //Checks if view is on signin page
+                if (findViewById(R.id.signinview).isShown()) {
+                   // SignIn.signin(findViewById(R.id.signin_username).toString(), Security.hashPassword(findViewById(R.id.signin_password).toString()));
+                }else if (findViewById(R.id.signupview).isShown()){
+                    //SignUp.signup(findViewById(R.id.signin_username).toString(), Security.hashPassword(findViewById(R.id.signin_password).toString()));
+                }*/
                 setContentView(R.layout.activity_main);
-                //SignIn.signin(SignIn_UserNameField.getText().toString(),SignIn_PasswordField.getText().toString());
                 break;
 
             case R.id.mainmenu_button_signin:
