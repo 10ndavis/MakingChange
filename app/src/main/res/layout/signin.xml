@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/signinview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,16 +9,18 @@
     <ImageView
         android:id="@+id/mainmenu_LogoImageView"
         android:layout_width="match_parent"
-        android:layout_height="300px"
-        android:layout_weight="5"
+        android:layout_height="300dp"
         android:src="@drawable/logolowres" />
 
     <TextView
         android:id="@+id/signin_txtusername"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_below="@+id/mainmenu_LogoImageView"
+        android:layout_marginTop="20dp"
         android:enabled="false"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:text="UserName"
         android:textColor="@color/colorPrimaryLight" />
 
@@ -28,6 +30,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/signin_txtusername"
         android:inputType="text"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:textColor="@color/colorPrimaryLight" />
 
     <TextView
@@ -35,6 +39,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/signin_username"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:text="Password"
         android:textColor="@color/colorPrimaryLight" />
 
@@ -44,8 +50,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/signin_txtpassword"
         android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:textColor="@color/colorPrimaryLight" />
-
     <Button
         android:id="@+id/mainmenu_button_back"
         android:layout_width="160dp"
@@ -74,4 +81,4 @@
         android:text="OK"
         android:textColor="@android:color/white" />
 
-</LinearLayout>
+</RelativeLayout>

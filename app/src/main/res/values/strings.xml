@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MakingChange</string>
+    <string name="menutextsize">25px</string>
 </resources>
