@@ -28,8 +28,10 @@
         android:id="@+id/mainmenu_TitleImageView"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
-        android:src="@drawable/makingchangetitle" />
+        android:src="@drawable/makingchangetitle"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/mainmenu_button_signup"
+        android:layout_alignEnd="@+id/mainmenu_button_signup" />
 
 
     <Button
