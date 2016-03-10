@@ -25,7 +25,7 @@
         android:enabled="false"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:text="UserName"
+        android:text="User Name"
         android:textColor="@color/colorPrimaryLight" />
 
     <EditText
@@ -62,15 +62,15 @@
         android:layout_width="160dp"
         android:layout_height="36dp"
 
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/mainmenu_button_ok"
         android:background="@color/colorPrimary"
         android:onClick="MenuMove"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:text="Back"
-        android:textColor="@android:color/white"
-        android:layout_alignTop="@+id/mainmenu_button_ok"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/mainmenu_button_ok"
